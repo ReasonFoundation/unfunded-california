@@ -53,9 +53,9 @@ const infoBoxStyle = {
 }
 
 // Add Thousand Separators to Numbers
-// function numberWithCommas (x) {
-//   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
-// }
+function numberWithCommas (x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+}
 
 // returns a color based on the value given when the function is called
 function getColor (opeb) {
@@ -106,7 +106,7 @@ const CountiesLayer = ({ styles, json, changeState, state }) => (
             '<div style="line-height:1.08;overflow:hidden;white-space:nowrap;">' +
             e.feature.getProperty('name') +
             '<br> Unfunded OPEB Per Resident: $' +
-            // numberWithCommas(e.feature.getProperty('opeb_liability_per_resident')) +
+            numberWithCommas(e.feature.getProperty('opeb_liability_per_resident')) +
             '</div>'
           )
 
