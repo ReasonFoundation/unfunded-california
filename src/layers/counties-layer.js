@@ -128,8 +128,8 @@ const CountiesLayer = ({ styles, json, changeState, state }) => (
           stateInfoWindow.setContent(
             '<div style="line-height:1.08;overflow:hidden;white-space:nowrap;">' +
             e.feature.getProperty('name') +
-            '<br> Unfunded OPEB Per Pupil: $' +
-            // numberWithCommas(e.feature.getProperty('opeb_liability_per_resident')) +
+            '<br> Unfunded OPEB Per Resident: $' +
+            numberWithCommas(e.feature.getProperty('opeb_liability_per_resident')) +
             '</div>'
           )
 
