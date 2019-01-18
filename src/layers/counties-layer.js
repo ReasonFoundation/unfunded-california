@@ -88,8 +88,8 @@ const CountiesLayer = ({ styles, json, changeState, state }) => (
 
         // Set and apply styling to the stateLayer
         map.data.setStyle((feature) => ({
-          // call function to get color for state based on opeb_liability_per_pupil
-          fillColor: getColor(feature.getProperty('opeb_liability_per_pupil')),
+          // call function to get color for state based on opeb_liability_per_resident
+          fillColor: getColor(feature.getProperty('opeb_liability_per_resident')),
           fillOpacity: 0.3,
           strokeColor: '#b3b3b3',
           strokeWeight: 0.3,
@@ -106,7 +106,7 @@ const CountiesLayer = ({ styles, json, changeState, state }) => (
             '<div style="line-height:1.08;overflow:hidden;white-space:nowrap;">' +
             e.feature.getProperty('name') +
             '<br> Unfunded OPEB Per Pupil: $' +
-            // numberWithCommas(e.feature.getProperty('opeb_liability_per_pupil')) +
+            // numberWithCommas(e.feature.getProperty('opeb_liability_per_resident')) +
             '</div>'
           )
 
@@ -129,7 +129,7 @@ const CountiesLayer = ({ styles, json, changeState, state }) => (
             '<div style="line-height:1.08;overflow:hidden;white-space:nowrap;">' +
             e.feature.getProperty('name') +
             '<br> Unfunded OPEB Per Pupil: $' +
-            // numberWithCommas(e.feature.getProperty('opeb_liability_per_pupil')) +
+            // numberWithCommas(e.feature.getProperty('opeb_liability_per_resident')) +
             '</div>'
           )
 
