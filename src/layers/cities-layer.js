@@ -39,7 +39,8 @@ const hoverStyle = {
 }
 
 const colors = [
-  '#444444',
+  '#D3D3D3',
+  '#FFFFFF',
   '#FF0000',
   '#FFFF00',
   '#00FF00'
@@ -53,9 +54,10 @@ const colors = [
 // returns a color based on the value given when the function is called
 function getColor (name, opeb) { 
     return name == 'California' ? colors[0]
-    : opeb >= 10000 ? colors[1]
-     : opeb > 2000 ? colors[2]
-      : colors[3]
+	: opeb == 'NA' ? colors[1]
+     : opeb >= 10000 ? colors[2]
+      : opeb > 2000 ? colors[3]
+       : colors[4]
 }
 
 const infoBoxStyle = {
