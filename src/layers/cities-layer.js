@@ -21,8 +21,8 @@ const center = {
 }
 
 const options = {
-  gestureHandling: 'none',
-  zoomControl: false,
+  gestureHandling: 'auto',
+  zoomControl: true,
   mapTypeId: 'roadmap',
   mapTypeControl: false,
   scaleControl: false,
@@ -60,6 +60,11 @@ function getColor (name, opeb) {
        : colors[4]
 }
 
+function getzIndex(name) {
+    return name == 'California' ? 1
+	: 2
+}	
+
 const infoBoxStyle = {
   position: 'absolute',
   top: '2rem',
@@ -93,11 +98,11 @@ const CitiesLayer = ({ styles, json, changeState, state }) => (
         // Set and apply styling to the stateLayer
         map.data.setStyle((feature) => ({
           // call function to get color for city based on opeb_liability_per_resident
-          fillColor: getColor(feature.getProperty('name','opeb_liability_per_resident')),
+          fillColor: getColor(feature.getProperty('name'),feature.getProperty('opeb_liability_per_resident')),
           fillOpacity: 0.3,
           strokeColor: '#b3b3b3',
           strokeWeight: 0.3,
-          zIndex: 1
+          zIndex: getzIndex(feature.getProperty('name'))
         }))
 
         // Add mouseover and mouse out styling for the GeoJSON State data
@@ -133,7 +138,7 @@ const CitiesLayer = ({ styles, json, changeState, state }) => (
           stateInfoWindow.setContent(
             '<div style="line-height:1.08;overflow:hidden;white-space:nowrap;">' +
             e.feature.getProperty('name') +
-            '<br> Unfunded OPEB Per Pupil: $' +
+            '<br> Unfunded OPEB Per Resident: $' +
             e.feature.getProperty('opeb_liability_per_resident') +
             // numberWithCommas(e.feature.getProperty('opeb_liability_per_resident')) +
             '</div>'
