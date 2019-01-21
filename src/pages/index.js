@@ -24,8 +24,8 @@ const loadingStyle = {
 }
 
 const mapContainerStyle = {
-  height: `700px`,
-  width: `900px`
+  height: `500px`,
+  width: `650px`
 }
 
 const shapeExampleStyles = {
