@@ -16,8 +16,8 @@ const CitiesLayerPropTypes = {
 }
 
 const center = {
-  lat: 38.005470223177466,
-  lng: -118.76220703125
+  lat: 38,
+  lng: -119
 }
 
 const options = {
