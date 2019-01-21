@@ -21,7 +21,7 @@ const center = {
 }
 
 const options = {
-  gestureHandling: 'none',
+  gestureHandling: 'auto',
   zoomControl: true,
   mapTypeId: 'roadmap',
   mapTypeControl: false,
