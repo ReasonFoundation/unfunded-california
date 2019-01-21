@@ -16,7 +16,7 @@ const DistrictsLayerPropTypes = {
 }
 
 const center = {
-  lat: 38,
+  lat: 39,
   lng: -119
 }
 
