@@ -39,6 +39,7 @@ const hoverStyle = {
 }
 
 const colors = [
+  '#444444',
   '#FF0000',
   '#FFFF00',
   '#00FF00'
@@ -50,10 +51,11 @@ const colors = [
 // }
 
 // returns a color based on the value given when the function is called
-function getColor (opeb) {
-  return opeb >= 10000 ? colors[0]
-    : opeb > 2000 ? colors[1]
-      : colors[2]
+function getColor (name, opeb) { 
+    return name == 'California' ? colors[0]
+    : opeb >= 10000 ? colors[1]
+     : opeb > 2000 ? colors[2]
+      : colors[3]
 }
 
 const infoBoxStyle = {
@@ -88,8 +90,8 @@ const CitiesLayer = ({ styles, json, changeState, state }) => (
 
         // Set and apply styling to the stateLayer
         map.data.setStyle((feature) => ({
-          // call function to get color for state based on opeb_liability_per_resident
-          fillColor: getColor(feature.getProperty('opeb_liability_per_resident')),
+          // call function to get color for city based on opeb_liability_per_resident
+          fillColor: getColor(feature.getProperty('name','opeb_liability_per_resident')),
           fillOpacity: 0.3,
           strokeColor: '#b3b3b3',
           strokeWeight: 0.3,
