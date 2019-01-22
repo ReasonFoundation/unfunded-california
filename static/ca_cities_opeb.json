@@ -1559,7 +1559,7 @@
 			"properties": {
 				"geoid": "16000US0603302",
 				"name": "Avenal",
-				"opeb_liability_per_resident": "NA"
+				"opeb_liability_per_resident": 394.67
 			}
 		},
 		{
@@ -3230,7 +3230,7 @@
 			"properties": {
 				"geoid": "16000US0608058",
 				"name": "Brawley",
-				"opeb_liability_per_resident": "NA"
+				"opeb_liability_per_resident": 0
 			}
 		},
 		{
@@ -5178,7 +5178,7 @@
 			"properties": {
 				"geoid": "16000US0613294",
 				"name": "Chowchilla",
-				"opeb_liability_per_resident": "NA"
+				"opeb_liability_per_resident": 0
 			}
 		},
 		{
@@ -5659,7 +5659,7 @@
 			"properties": {
 				"geoid": "16000US0614218",
 				"name": "Clovis",
-				"opeb_liability_per_resident": "NA"
+				"opeb_liability_per_resident": 0
 			}
 		},
 		{
@@ -7559,7 +7559,7 @@
 			"properties": {
 				"geoid": "16000US0618506",
 				"name": "Del Mar",
-				"opeb_liability_per_resident": "NA"
+				"opeb_liability_per_resident": 0
 			}
 		},
 		{
@@ -9045,7 +9045,7 @@
 			"properties": {
 				"geoid": "16000US0622804",
 				"name": "Escondido",
-				"opeb_liability_per_resident": "NA"
+				"opeb_liability_per_resident": 0
 			}
 		},
 		{
@@ -9121,7 +9121,7 @@
 			"properties": {
 				"geoid": "16000US0623042",
 				"name": "Eureka",
-				"opeb_liability_per_resident": "NA"
+				"opeb_liability_per_resident": 0
 			}
 		},
 		{
@@ -28324,7 +28324,7 @@
 			"properties": {
 				"geoid": "16000US0668196",
 				"name": "San Marcos",
-				"opeb_liability_per_resident": "NA"
+				"opeb_liability_per_resident": 0
 			}
 		},
 		{
@@ -30984,7 +30984,7 @@
 			"properties": {
 				"geoid": "16000US0675000",
 				"name": "Stockton",
-				"opeb_liability_per_resident": "NA"
+				"opeb_liability_per_resident": 0
 			}
 		},
 		{
@@ -33057,7 +33057,7 @@
 			"properties": {
 				"geoid": "16000US0682954",
 				"name": "Visalia",
-				"opeb_liability_per_resident": "NA"
+				"opeb_liability_per_resident": 0
 			}
 		},
 		{
@@ -33184,7 +33184,7 @@
 			"properties": {
 				"geoid": "16000US0682996",
 				"name": "Vista",
-				"opeb_liability_per_resident": "NA"
+				"opeb_liability_per_resident": 0
 			}
 		},
 		{
@@ -33358,7 +33358,7 @@
 			"properties": {
 				"geoid": "16000US0683346",
 				"name": "Walnut Creek",
-				"opeb_liability_per_resident": "NA"
+				"opeb_liability_per_resident": 0
 			}
 		},
 		{
